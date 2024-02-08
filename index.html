@@ -27,23 +27,31 @@
     <header class="debug">
       <div class="container h-100 debug">
         <div class="row align-items-center h-100">
-          <div class="col-8 col-md-4 debug">Titolo</div>
-          <div class="col-4 col-md-8 debug">
-            <div class="d-md-none text-end">Hamburger</div>
-            <nav class="d-none d-md-block text-end">Menu</nav>
+          <div class="col-11 col-md-4 text-uppercase debug">Titolo</div>
+          <div class="col-1 col-md-8 debug">
+            <div class="d-md-none text-end">H</div>
+            <nav class="d-none d-md-block text-end">
+              <ul
+                class="d-flex list-unstyled justify-content-end align-items-center mb-0"
+              >
+                <li class="ps-4 text-uppercase">1</li>
+                <li class="ps-4 text-uppercase">2</li>
+                <li class="ps-4 text-uppercase">3</li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="hero debug">
+      <div class="hero py-4 debug">
         <div class="container_cs text-center">
           <div class="container-fluid debug">
-            <div class="row flex-column">
-              <div class="col-6 offset-3 debug">Img</div>
+            <div class="row flex-column align-items-center">
+              <div class="col-6 debug debug-img">Img</div>
               <div class="col text-uppercase debug">Title</div>
-              <div class="col-6 offset-3 debug">Star</div>
+              <div class="col-6 col-md-8 debug">Star</div>
               <div class="col text-uppercase debug">Subtitle</div>
             </div>
           </div>
@@ -51,10 +59,12 @@
       </div>
 
       <!-- Section Portfolio -->
-      <section>
-        <div class="text-center debug">Title</div>
-        <div class="text-center debug">Star</div>
+      <section class="py-4 debug">
         <div class="container text-center debug">
+          <div class="row flex-column align-items-center">
+            <div class="col text-uppercase debug">Title</div>
+            <div class="col-6 col-md-8 debug">Star</div>
+          </div>
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4 debug">
               <div class="card my-2">Card 1</div>
@@ -80,30 +90,32 @@
       <!-- / Section Portfolio -->
 
       <!-- Section About -->
-      <section class="debug">
+      <section class="debug py-4">
         <div class="container_cs text-center debug">
-          <div class="debug">Title</div>
-          <div class="debug">Star</div>
           <div class="container-fluid">
+            <div class="row flex-column align-items-center">
+              <div class="col text-uppercase debug">Title</div>
+              <div class="col-6 debug">Star</div>
+            </div>
             <div class="row flex-column flex-md-row text-start">
               <div class="col col-md-6 debug">1</div>
               <div class="col col-md-6 debug">2</div>
+              <div class="col debug text-center">
+                <a class="text-decoration-none text-white" href="#">Button</a>
+              </div>
             </div>
-          </div>
-          <div>
-            <a class="text-decoration-none text-white" href="#">Button</a>
           </div>
         </div>
       </section>
       <!-- / Section About -->
 
       <!-- Section contact -->
-      <section>
+      <section class="py-4 debug">
         <div class="container_cs text-center">
           <div class="container-fluid debug">
-            <div class="row flex-column">
+            <div class="row flex-column align-items-center">
               <div class="col text-uppercase debug">Title</div>
-              <div class="col-6 offset-3 debug">Star</div>
+              <div class="col-6 debug">Star</div>
               <div class="col debug">Form</div>
               <div class="col text-start">
                 <a class="text-decoration-none text-white" href="#">Button</a>
@@ -115,7 +127,7 @@
       <!-- / Section contact -->
     </main>
 
-    <footer>
+    <footer class="py-4 debug">
       <div class="container text-center debug">
         <div class="row flex-column flex-md-row">
           <div class="col debug">1</div>
