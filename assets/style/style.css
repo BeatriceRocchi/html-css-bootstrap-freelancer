@@ -6,6 +6,11 @@
   border: 1px solid gray;
 }
 
+.container_cs {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 /* Header */
 header {
   height: 90px;
