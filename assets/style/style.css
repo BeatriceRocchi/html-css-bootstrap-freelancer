@@ -3,6 +3,7 @@
   --color-primary: #2c3e50;
   --color-primary-light: #3a546d;
   --color-secondary: #1abc9c;
+  --color-secondary-transparent: rgba(26, 188, 156, 0.5);
   --color-secondary-dark: #15a185;
   --color-white: #ffffff;
 
@@ -19,12 +20,6 @@ body {
 }
 
 /* Utilities */
-/* TODO: eliminare debug */
-.debug {
-  background-color: rgba(50, 205, 50, 0.6);
-  border: 1px solid gray;
-}
-
 .container_cs {
   margin: 0 auto;
   width: 60%;
@@ -116,6 +111,19 @@ section {
 }
 
 /* Section Portfolio */
+.my_mask {
+  background-color: var(--color-secondary-transparent);
+  display: none;
+}
+
+.my_mask i {
+  font-size: 5rem;
+}
+
+.my_card:hover .my_mask {
+  display: block;
+}
+
 .card_bg-1 {
   background-color: var(--color-card-1);
 }
