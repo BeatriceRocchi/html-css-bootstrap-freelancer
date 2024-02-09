@@ -172,6 +172,11 @@ footer li {
   margin: 6px;
 }
 
+.lower-footer {
+  height: 100px;
+  font-size: small;
+}
+
 /* Buttons */
 .my_btn {
   background-color: var(--color-secondary);
