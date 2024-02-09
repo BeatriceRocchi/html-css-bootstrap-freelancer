@@ -18,14 +18,20 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Font -->
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style/style.css" />
 
     <title>Bootstrap Freelancer</title>
   </head>
   <body>
-    <header class="debug position-fixed w-100 top-0 z-3">
-      <div class="container h-100 debug">
+    <header class="position-fixed w-100 top-0 z-3">
+      <div class="container h-100">
         <div class="row align-items-center h-100">
           <div class="col-11 col-md-4 text-uppercase debug">Titolo</div>
           <div class="col-1 col-md-8 debug">
@@ -45,44 +51,45 @@
     </header>
 
     <main class="mt_90">
-      <div class="hero py-4 debug">
-        <div class="container_cs text-center">
-          <div class="container-fluid debug">
-            <div class="row flex-column align-items-center">
-              <div class="col-6 debug debug-img">Img</div>
-              <div class="col text-uppercase debug">Title</div>
-              <div class="col-6 col-md-8 debug">Star</div>
-              <div class="col text-uppercase debug">Subtitle</div>
-            </div>
+      <!-- Hero -->
+      <div class="hero debug">
+        <div class="container text-center debug">
+          <div class="row flex-column align-items-center">
+            <div class="col-6 debug debug-img">Img</div>
+            <div class="col text-uppercase debug">Title</div>
+            <div class="col-6 col-md-8 debug">Star</div>
+            <div class="col text-uppercase debug">Subtitle</div>
           </div>
         </div>
       </div>
+      <!-- / Hero -->
 
       <!-- Section Portfolio -->
-      <section class="py-4 debug">
+      <section class="debug">
         <div class="container text-center debug">
           <div class="row flex-column align-items-center">
             <div class="col text-uppercase debug">Title</div>
             <div class="col-6 col-md-8 debug">Star</div>
           </div>
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 debug">
-              <div class="card my-2">Card 1</div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <div class="debug">
+              <div class="card_cs my-3">Card 1</div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 debug">
-              <div class="card my-2">Card 2</div>
+            <div class="debug">
+              <div class="card_cs my-3">Card 2</div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 debug">
-              <div class="card my-2">Card 3</div>
+            <div class="debug">
+              <div class="card_cs my-3">Card 3</div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 debug">
-              <div class="card my-2">Card 4</div>
+            <div class="debug">
+              <div class="card_cs my-3">Card 4</div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 debug">
-              <div class="card my-2">Card 5</div>
+            <div class="debug">
+              <div class="card_cs my-3">Card 5</div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 debug">
-              <div class="card my-2">Card 6</div>
+            <div class="debug">
+              <div class="card_cs my-3">Card 6</div>
             </div>
           </div>
         </div>
@@ -90,35 +97,64 @@
       <!-- / Section Portfolio -->
 
       <!-- Section About -->
-      <section class="debug py-4">
-        <div class="container_cs text-center debug">
+      <section class="debug">
+        <div class="container text-center debug">
+          <div class="row flex-column align-items-center">
+            <div class="col text-uppercase debug">Title</div>
+            <div class="col-6 debug">Star</div>
+          </div>
+        </div>
+
+        <div class="container_cs">
           <div class="container-fluid">
-            <div class="row flex-column align-items-center">
-              <div class="col text-uppercase debug">Title</div>
-              <div class="col-6 debug">Star</div>
-            </div>
             <div class="row flex-column flex-md-row text-start">
               <div class="col col-md-6 debug">1</div>
               <div class="col col-md-6 debug">2</div>
-              <div class="col debug text-center">
-                <a class="text-decoration-none text-white" href="#">Button</a>
-              </div>
             </div>
           </div>
+        </div>
+        <div class="debug text-center">
+          <a class="text-decoration-none text-white" href="#">Button</a>
         </div>
       </section>
       <!-- / Section About -->
 
       <!-- Section contact -->
-      <section class="py-4 debug">
+      <section class="debug">
+        <div class="container text-center debug">
+          <div class="row flex-column align-items-center">
+            <div class="col text-uppercase debug">Title</div>
+            <div class="col-6 debug">Star</div>
+          </div>
+        </div>
+
         <div class="container_cs text-center">
           <div class="container-fluid debug">
-            <div class="row flex-column align-items-center">
-              <div class="col text-uppercase debug">Title</div>
-              <div class="col-6 debug">Star</div>
-              <div class="col debug">Form</div>
-              <div class="col text-start">
-                <a class="text-decoration-none text-white" href="#">Button</a>
+            <div class="row text-start">
+              <div class="col-12 debug">
+                <form action="#" class="my_form">
+                  <input type="text" class="form-control" placeholder="Name" />
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone Number"
+                  />
+
+                  <textarea
+                    class="form-control"
+                    placeholder="Message"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                  <button type="submit" class="btn my_btn text-white my-3">
+                    Send
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -127,17 +163,55 @@
       <!-- / Section contact -->
     </main>
 
-    <footer class="py-4 debug">
-      <div class="container text-center debug">
-        <div class="row flex-column flex-md-row">
-          <div class="col debug">1</div>
-          <div class="col debug">2</div>
-          <div class="col debug">3</div>
+    <footer class="debug">
+      <div class="upper-footer">
+        <div class="container text-center debug">
+          <div class="row flex-column flex-md-row">
+            <div class="col debug">1</div>
+            <div class="col debug">2</div>
+            <div class="col debug">3</div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col">Copyright</div>
+      </div>
+
+      <div class="lower-footer">
+        <div class="text-center debug">
+          <p>Copyright</p>
         </div>
       </div>
     </footer>
   </body>
 </html>
+
+<!-- NAVBAR BOOTSTRAP -->
+<!-- <header>
+  <nav class="my_bg navbar navbar-expand-lg py-4" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand text-uppercase fs-4 text-white" href="#">Start Bootstrap</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header> -->
