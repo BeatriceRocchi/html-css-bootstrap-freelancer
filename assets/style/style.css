@@ -10,13 +10,10 @@ body {
 }
 
 /* Utilities */
+/* TODO: eliminare debug */
 .debug {
   background-color: rgba(50, 205, 50, 0.6);
   border: 1px solid gray;
-}
-
-.debug-img {
-  height: 200px;
 }
 
 .container_cs {
@@ -24,8 +21,18 @@ body {
   width: 60%;
 }
 
-.my_bg {
+.my_bg-primary {
   background-color: var(--color-primary) !important;
+}
+
+.my_section-colored {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.my_section-white {
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .mt_90 {
@@ -37,10 +44,47 @@ header {
   height: 90px;
 }
 
-/* Main */
+/* ---- Main ---- */
 .hero,
 section {
   padding: 40px 0;
+}
+
+/* Hero */
+.img-box {
+  height: 265px;
+}
+
+.star-box {
+  position: relative;
+}
+
+.star-box i {
+  position: relative;
+}
+
+.star-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 20%);
+  transform: translateY(-50%);
+  border: 2px solid var(--color-white);
+  border-radius: 10px;
+  display: inline-block;
+  width: 16%;
+}
+
+.star-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(50% - 20%);
+  transform: translateY(-50%);
+  border: 2px solid var(--color-white);
+  border-radius: 10px;
+  display: inline-block;
+  width: 16%;
 }
 
 .card_cs {
