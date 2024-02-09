@@ -3,6 +3,13 @@
   --color-primary: #2c3e50;
   --color-secondary: #1abc9c;
   --color-white: #ffffff;
+
+  --color-card-1: #ba4b63;
+  --color-card-2: #1ea4b6;
+  --color-card-3: #140f0f;
+  --color-card-4: #1c83c1;
+  --color-card-5: #0e38b5;
+  --color-card-6: #ccb2a3;
 }
 
 body {
@@ -67,29 +74,54 @@ section {
   content: "";
   position: absolute;
   top: 50%;
-  left: calc(50% - 20%);
+  left: calc(50% - 18%);
   transform: translateY(-50%);
   border: 2px solid var(--color-white);
   border-radius: 10px;
   display: inline-block;
-  width: 16%;
+  width: 15%;
 }
 
 .star-box::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: calc(50% - 20%);
+  right: calc(50% - 18%);
   transform: translateY(-50%);
   border: 2px solid var(--color-white);
   border-radius: 10px;
   display: inline-block;
-  width: 16%;
+  width: 15%;
 }
 
-.card_cs {
-  background-color: aquamarine;
-  height: 360px;
+.my_section-white .star-box::before,
+.my_section-white .star-box::after {
+  border-color: var(--color-primary);
+}
+
+/* Section Portfolio */
+.card_bg-1 {
+  background-color: var(--color-card-1);
+}
+
+.card_bg-2 {
+  background-color: var(--color-card-2);
+}
+
+.card_bg-3 {
+  background-color: var(--color-card-3);
+}
+
+.card_bg-4 {
+  background-color: var(--color-card-4);
+}
+
+.card_bg-5 {
+  background-color: var(--color-card-5);
+}
+
+.card_bg-6 {
+  background-color: var(--color-card-6);
 }
 
 .my_form input,
