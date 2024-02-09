@@ -85,7 +85,7 @@ section {
   content: "";
   position: absolute;
   top: 50%;
-  left: calc(50% - 18%);
+  left: calc(50% - 19%);
   transform: translateY(-50%);
   border: 2px solid var(--color-white);
   border-radius: 10px;
@@ -97,7 +97,7 @@ section {
   content: "";
   position: absolute;
   top: 50%;
-  right: calc(50% - 18%);
+  right: calc(50% - 19%);
   transform: translateY(-50%);
   border: 2px solid var(--color-white);
   border-radius: 10px;
@@ -162,6 +162,7 @@ section {
 .my_form input::placeholder,
 .my_form textarea::placeholder {
   color: var(--color-primary);
+  font-size: 1.2rem;
 }
 
 .my_form input:focus,
@@ -172,10 +173,10 @@ section {
 
 /* Footer */
 footer li {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  line-height: 40px;
+  line-height: 50px;
   border: 1px solid var(--color-white);
   margin: 6px;
 }
@@ -189,7 +190,6 @@ footer li {
 .my_btn {
   background-color: var(--color-secondary);
   border: none;
-  font-size: small;
   color: var(--color-white);
 }
 
@@ -198,11 +198,26 @@ footer li {
   color: var(--color-white);
 }
 
-.my_btn_outline {
-  font-size: small;
-}
-
 .my_btn_outline:hover {
   background-color: var(--color-white);
   color: var(--color-secondary);
+}
+
+/* Media query */
+@media screen and (min-width: 540px) {
+  header .navbar-brand {
+    font-size: 1.8rem !important;
+  }
+
+  .hero {
+    font-size: 1.5rem !important;
+  }
+
+  .hero .my_title {
+    font-size: 3.5rem !important;
+  }
+
+  section .my_title {
+    font-size: 3rem !important;
+  }
 }
