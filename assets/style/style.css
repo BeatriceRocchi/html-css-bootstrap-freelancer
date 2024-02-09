@@ -142,6 +142,7 @@ section {
   box-shadow: none;
 }
 
+/* Buttons */
 .my_btn {
   background-color: #1abc9c;
   border: none;
@@ -149,4 +150,9 @@ section {
 
 .my_btn:hover {
   background-color: #169e83;
+}
+
+.my_btn_outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-secondary);
 }
