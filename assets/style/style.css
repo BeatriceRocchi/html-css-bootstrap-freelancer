@@ -2,6 +2,7 @@
 :root {
   --color-primary: #2c3e50;
   --color-secondary: #1abc9c;
+  --color-secondary-dark: #15a185;
   --color-white: #ffffff;
 
   --color-card-1: #ba4b63;
@@ -124,32 +125,43 @@ section {
   background-color: var(--color-card-6);
 }
 
+/* Section Contact */
 .my_form input,
 .my_form textarea {
   border-top: none;
   border-left: none;
   border-right: none;
   border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .my_form input::placeholder,
 .my_form textarea::placeholder {
-  color: #2b3d4f;
+  color: var(--color-primary);
 }
 
 .my_form input:focus,
 .my_form textarea:focus {
   box-shadow: none;
+  border-color: var(--color-secondary);
 }
 
 /* Buttons */
 .my_btn {
-  background-color: #1abc9c;
+  background-color: var(--color-secondary);
   border: none;
+  font-size: small;
+  color: var(--color-white);
 }
 
 .my_btn:hover {
-  background-color: #169e83;
+  background-color: var(--color-secondary-dark);
+  color: var(--color-white);
+}
+
+.my_btn_outline {
+  font-size: small;
 }
 
 .my_btn_outline:hover {
